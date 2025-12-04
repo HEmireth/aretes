@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Registro</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="inicio.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
+      <nav>
+        <ul class="nav">
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Registro / Suscripción</h1>
+    <form id="regForm" novalidate>
+      <label for="name">Nombre completo</label>
+      <input id="name" name="name" type="text" required minlength="3" placeholder="Tu nombre">
+
+      <label for="email">Correo electrónico</label>
+      <input id="email" name="email" type="email" required placeholder="correo@ejemplo.com">
+
+      <label for="phone">Teléfono (opcional)</label>
+      <input id="phone" name="phone" type="tel" pattern="^[0-9]{7,15}$" placeholder="Solo dígitos">
+
+      <label for="message">Comentario (opcional)</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button class="btn" type="submit">Suscribirme</button>
+    </form>
+
+    <section class="data-list">
+      <h2>Suscripciones recientes</h2>
+      <ul id="entries"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="yearRegistro"></span> Tienda de Aretes</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

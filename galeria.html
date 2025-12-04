@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galería</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="inicio.html"><img src="img/logo.png" alt="Logo" class="logo"></a>
+      <nav>
+        <ul class="nav">
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container gallery-page">
+    <h1>Galería de aretes</h1>
+    <div class="gallery" id="gallery">
+      <img src="img/galeria1.jpg" class="thumb">
+      <img src="img/galeria2.jpg" class="thumb">
+      <img src="img/arete1.jpg" class="thumb">
+      <img src="img/arete2.jpg" class="thumb">
+    </div>
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <button id="closeModal" class="modal-close" aria-label="Cerrar">&times;</button>
+    <img id="modalImg" alt="">
+    <p id="modalCaption"></p>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="yearGaleria"></span> Tienda de Aretes</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

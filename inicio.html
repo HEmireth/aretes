@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inicio - Tienda de Aretes</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="inicio.html"><img src="img/logo.png" class="logo"></a>
+      <nav>
+        <ul class="nav" id="mainNav">
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn small">Modo oscuro</button>
+        <button id="cartBtn" class="btn small">Carrito (<span id="cartCount">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Tienda de Aretes</h1>
+        <p>Aretes únicos, para todo estilo. Encuentra el par para ti.</p>
+        <a class="btn" href="#productos">Ver productos</a>
+      </div>
+    </section>
+
+    <section class="featured container" id="productos">
+      <h2>Productos destacados</h2>
+      <div class="productos-grid" id="productosGrid">
+      </div>
+    </section>
+
+    <section class="carousel container" aria-label="Carrusel">
+      <h2>Inspiración</h2>
+      <div class="carousel-inner" id="carousel">
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">‹</button>
+        <div class="slides">
+          <img src="img/carrusel1.jpg">
+          <img src="img/carrusel2.jpg">
+          <img src="img/carrusel3.jpg">
+        </div>
+        <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente">›</button>
+      </div>
+    </section>
+
+    <section class="opiniones container">
+      <h2>¿Por qué elegirnos?</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Diseño exclusivo</h3>
+          <p>Piezas únicas y edición limitada.</p>
+        </article>
+        <article class="card">
+          <h3>Materiales de calidad</h3>
+          <p>Alergia-friendly y duraderos.</p>
+        </article>
+        <article class="card">
+          <h3>Envíos rápidos</h3>
+          <p>Empaque cuidado y envío seguro.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Carrito modal simple -->
+    <div id="cartModal" class="modal" aria-hidden="true">
+      <button id="closeCart" class="modal-close" aria-label="Cerrar carrito">&times;</button>
+      <div class="modal-content">
+        <h3>Carrito</h3>
+        <ul id="cartItems"></ul>
+        <p class="total">Total: $<span id="cartTotal">0.00</span></p>
+        <button id="checkoutBtn" class="btn">Pagar</button>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="yearInicio"></span> Tienda de Aretes</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
